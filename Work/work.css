@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 858px;
+  margin: 0 auto;
+}
+
+:root {
+  --dark-color: #21243d;
+}
+
+im header .nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 33px;
+  padding: 27px 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+header .nav-menu a {
+  color: #000;
+}
+
+.feature {
+  padding: 15px 0 83px 0;
+}
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.feature-title {
+  color: var(--dark-color);
+  font-size: 44px;
+  line-height: 60px;
+  margin-bottom: 22px;
+  margin-top: 90px;
+}
+.feature-item {
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid #a0a0a0;
+  padding-bottom: 15px;
+}
+.feature-item-content h2 {
+  color: var(--dark-color);
+  font-size: 30px;
+  font-weight: 700;
+}
+.feature-item-content .feature-date span:first-child {
+  color: #fff;
+  border-radius: 16px;
+  background: #142850;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 60px;
+}
+.feature-item-content .feature-date span:last-child {
+  color: #8695a4;
+  font-size: 20px;
+  margin-left: 26px;
+}
+.feature-item-content p {
+  color: var(--dark-color);
+}
+
+footer {
+  padding: 51px 0 54px 0;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+footer ul li i {
+  font-size: 30px;
+  color: var(--dark-color);
+}
+footer p {
+  margin-top: 26px;
+  text-align: center;
+  color: var(--dark-color);
+  font-size: 14px;
+}
+
+nav .fa-bars {
+  font-size: 30px;
+  color: #444;
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  nav .fa-bars {
+    display: flex;
+    justify-content: end;
+    padding: 27px 10px;
+  }
+  header .nav-menu {
+    display: none;
+  }
+  .feature {
+    padding: 0px 16px 17px 16px;
+  }
+  .feature-box {
+    gap: 39px;
+  }
+  .feature-title {
+    font-size: 30px;
+    margin-bottom: 13px;
+    margin-top: 24px;
+  }
+  .feature-item {
+    flex-direction: column;
+  }
+  .feature-item-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .feature-item-content .feature-date span:first-child {
+    color: #fff;
+    padding: 0 22px;
+    font-size: 16px;
+  }
+  .feature-item-content .feature-date span:last-child {
+    font-size: 16px;
+    margin-left: 22px;
+  }
+}
